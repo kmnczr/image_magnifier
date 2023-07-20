@@ -8,7 +8,9 @@ function ImageMagnifier({
   magnifierHeight = 100,
   magnifieWidth = 100,
   zoomLevel = 2,
-  
+  rValue,
+  gValue,
+  bValue
 }) {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
@@ -61,7 +63,7 @@ function ImageMagnifier({
           pointerEvents: "none",
           height: `${magnifierHeight}px`,
           width: `${magnifieWidth}px`,
-          ...magnifierAnimation, // Apply the animated styles here
+          ...magnifierAnimation, // animated styles here
           borderRadius: "50%",
           opacity: "1",
           border: "1px solid lightgray",
@@ -71,7 +73,7 @@ function ImageMagnifier({
           backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
           backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
           backgroundBlendMode: "multiply",
-          //backgroundColor: `rgb(${rValue}%, ${gValue}%, ${bValue}%)`,
+          backgroundColor: `rgb(${rValue}%, ${gValue}%, ${bValue}%)`,
         }}
       ></animated.div>
     </div>
