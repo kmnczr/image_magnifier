@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Align components horizontally */
+    align-items: center; /* Center components vertically */
+    margin-top: 20px;
+    column-gap: 20px;
+  }
+  
+.imageContainer {
+  margin-right: "20px"
+}
+
+.vranger {
+  margin-top: 50px;
+   transform: rotate(270deg);
+  -moz-transform: rotate(270deg); /*do same for other browsers if required*/
+}
+
+label,input{
+  display: block;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
