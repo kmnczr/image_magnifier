@@ -5,8 +5,8 @@ function ImageMagnifier({
   src,
   width,
   height,
-  magnifierHeight = 100,
-  magnifieWidth = 100,
+  magnifierHeight = 50,
+  magnifieWidth = 50,
   zoomLevel = 2,
   rValue,
   gValue,
@@ -18,10 +18,12 @@ function ImageMagnifier({
   const [imgHeight, setImgHeight] = useState(0);
   const [showMagnifier, setShowMagnifier] = useState(false);
 
+  const magnifierDistance = 50; // Set the distance from the cursor
+
   const magnifierAnimation = useSpring({
-    top: showMagnifier ? `${y + 50}px` : `${y + 50}px`,
+    top: showMagnifier ? `${y - magnifierHeight / 2 + magnifierDistance}px` : `${y - magnifierHeight / 2 - magnifierDistance}px`,
     left: showMagnifier ? `${x - magnifieWidth / 2}px` : `${x - magnifieWidth / 2}px`,
-    config: { tension: 120, friction: 14 } // Adjust these values for different easing effect
+    config: { tension: 120, friction: 14 }
   });
 
   return (
@@ -81,3 +83,4 @@ function ImageMagnifier({
 }
 
 export default ImageMagnifier;
+

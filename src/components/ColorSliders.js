@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import '../styles.css'
+
 
 function ColorSliders({ rValue, gValue, bValue, onRChange, onGChange, onBChange }) {
   const [selectedChannel, setSelectedChannel] = useState(null);
@@ -37,9 +39,9 @@ function ColorSliders({ rValue, gValue, bValue, onRChange, onGChange, onBChange 
   }, [rValue, gValue, bValue, onRChange, onGChange, onBChange, selectedChannel]);
 
   return (
-    <div>
+    <div className="container">
       <div>
-        <label>RED: {rValue}%</label><br/>
+        <label>RED</label>
         <input
           type="range"
           min={0}
@@ -48,9 +50,10 @@ function ColorSliders({ rValue, gValue, bValue, onRChange, onGChange, onBChange 
           value={rValue}
           onChange={(e) => onRChange(parseInt(e.target.value))}
         />
+        <p>{rValue}%</p>
       </div>
       <div>
-        <label>GREEN: {gValue}%</label><br/>
+        <label>GREEN</label>
         <input
           type="range"
           min={0}
@@ -59,9 +62,10 @@ function ColorSliders({ rValue, gValue, bValue, onRChange, onGChange, onBChange 
           value={gValue}
           onChange={(e) => onGChange(parseInt(e.target.value))}
         />
+        <p>{gValue}%</p>
       </div>
       <div>
-        <label>BLUE: {bValue}%</label><br/>
+        <label>BLUE</label>
         <input
           type="range"
           min={0}
@@ -70,6 +74,7 @@ function ColorSliders({ rValue, gValue, bValue, onRChange, onGChange, onBChange 
           value={bValue}
           onChange={(e) => onBChange(parseInt(e.target.value))}
         />
+        <p>{bValue}%</p>
       </div>
       
     </div>
