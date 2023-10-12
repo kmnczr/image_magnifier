@@ -6,13 +6,13 @@ This React application allows you to display an image in a box and provides a ma
 
 # Table of Contents
 
-- Getting started
+- Installation
 - Usage
 - Changing Zoom Level
 - Changing RGB Colors
 - Contributing
 
-## Getting started
+## Installation
 
 1. Clone the repository to your local machine:
 `git clone https://github.com/kmnczr/image-magnifier-app.git`
