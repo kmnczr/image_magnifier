@@ -6,23 +6,22 @@ This React application allows you to display an image in a box and provides a ma
 
 # Table of Contents
 
-# Getting Started
+- Getting started
 - Usage
 - Changing Zoom Level
 - Changing RGB Colors
 - Contributing
-- Getting Started
 
-## To get started with this application, follow these steps:
+## Getting started
 
 1. Clone the repository to your local machine:
-git clone https://github.com/yourusername/image-magnifier-app.git
+`git clone https://github.com/kmnczr/image-magnifier-app.git`
 2. Navigate to the project directory:
-cd image-magnifier-app
+`cd image-magnifier-app`
 3. Install the dependencies:
-npm install
+`npm install`
 4. Start the development server:
-npm start
+`npm start`
 5. Open your web browser and visit http://localhost:3000 to view the application.
 
 ## Usage
@@ -53,10 +52,10 @@ If you would like to contribute to this project, please follow these steps:
 
 1. Fork the repository on GitHub.
 2. Create a new branch with a descriptive name:
-git checkout -b feature/new-feature
+`git checkout -b feature/new-feature`
 3. Make your changes and commit them with clear and concise messages.
 4. Push your changes to your fork:
-git push origin feature/new-feature
+`git push origin feature/new-feature`
 5. Create a pull request on the original repository.
 
 Thank you for your contributions!
